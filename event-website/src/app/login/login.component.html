@@ -1,0 +1,17 @@
+<div>
+  <form class="login-form" (submit)="login()">
+    <span class="p-float-label">
+        <label for="username">Username:</label>
+        <input pInputText type="text" id="username" name="username" required [(ngModel)]="value">
+    </span>
+    <br>
+    <span class="p-float-label">
+        <label for="password">Password:</label>
+        <input pInputText type="password" id="password" name="password" required>
+    </span>
+    <br>
+    <button pButton type="submit">Login</button>
+    <p>If you don't have an account, <a [routerLink]="['/register']" routerLinkActive="router-link-active" >sign up</a>.</p>
+  </form>
+  
+</div>

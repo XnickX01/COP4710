@@ -1,0 +1,114 @@
+// Define the container for the right side section
+.calendar-section {
+  width: 40%; // Adjust the width as needed
+  float: right;
+  // Add any other styling properties for the container
+}
+// Define the container for the left side section
+.events-section {
+  width: 60%; // Adjust the width as needed
+  float: left;
+  // Add any other styling properties for the container
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    // Add any other styling properties for the container
+}
+
+// Define the container for the right side section
+.calendar-section {
+  width: 40%; // Adjust the width as needed
+  float: right;
+  // Add any other styling properties for the container
+}
+
+// Define the container for the left side section
+.events-section {
+  width: 60%; // Adjust the width as needed
+  float: left;
+  // Add any other styling properties for the container
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  margin: 0;
+  // Add any other styling properties for the container
+}
+
+.calendar {
+    // Add any other styling properties for the calendar container
+    border: 1px solid #a983d5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calendar-header {
+    // Add any styling properties for the calendar header
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.current-month {
+    // Add styling properties for the current month heading
+    font-size: 18px;
+}
+
+
+// .calendar-body {
+//     // Add any styling properties for the calendar body
+// }
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    align-items: center; // Add this line to vertically align the days
+    // border: 1px solid #ccc; // Add gridlines with a border
+    padding: 10px;
+}
+
+.weekday {
+    font-weight: bold;
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    align-items: center; // Add this line to vertically align the days
+    // border: 1px solid #ccc; // Add gridlines with a border
+    padding: 10px;
+}
+
+.day {
+    // Add any styling properties for the day
+    text-align: center;
+    cursor: pointer;
+    // border: 1px solid #ccc; // Add gridlines with a border
+}
+
+.current-day {
+    // Add any styling properties for the current day
+    background-color: #a983d5;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}

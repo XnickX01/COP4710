@@ -1,0 +1,43 @@
+.event-load-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .loading-text {
+        color: hsl(270, 50%, 80%); // Light purple
+        font-size: 48px; // Increase font size to make it large
+        font-weight: bold;
+        animation: loading 1s linear forwards, colorChange 2s linear infinite;
+        opacity: 0;
+        transition: opacity 0.5s ease-in;
+    }
+
+    &.fade-in .loading-text {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: hsl(270, 50%, 80%); // Light purple
+    }
+    50% {
+        color: hsl(269, 40%, 68%); // Light blue
+    }
+    75% {
+        color: hsl(269, 29%, 67%); // Light blue
+    }
+    100% {
+        color: hsl(270, 50%, 80%); // Light yellow
+    }
+}

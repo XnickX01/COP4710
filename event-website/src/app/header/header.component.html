@@ -1,0 +1,19 @@
+<p-toolbar  class="toolbar" styleClass="bg-gray-900 shadow-2" [style]="{ 'border-radius': '3rem', 'background-image': 'linear-gradient(to right, var(--bluegray-500), var(--bluegray-800))', 'height': '40px' }" >
+    <ng-template pTemplate="start">
+        <div class="centered-icon">
+            <a (click)="onSidebarToggle()"><i class="home-bars" class="pi pi-bars"></i></a>
+            
+        </div>
+    </ng-template>
+    <ng-template pTemplate="center">
+        <div class="search-area">
+                <!-- <input type="search" pInputText placeholder="Search..."/> -->
+                <a [routerLink]="['/']" routerLinkActive="router-link-active" >Event Management System</a>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+        <p-avatar label="NK" shape="circle" class="avatar"></p-avatar>
+    </ng-template>
+</p-toolbar>
+
+<p-sidebar [(visible)]="sidebarVisible"></p-sidebar>
